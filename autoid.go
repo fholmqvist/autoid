@@ -48,7 +48,7 @@ func NextUint32() (uint32, error) {
 
 func NextUint64() (uint64, error) {
 	if __id == math.MaxUint64 {
-		return 0, fmt.Errorf(errOverflow, "uint32", __id)
+		return 0, fmt.Errorf(errOverflow, "uint64", __id)
 	}
 	return next(), nil
 }
